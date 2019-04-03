@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { PostsComponent } from './posts/posts.component';
+import { LoginRoutingModule } from './login-routing.module';
+import { PostRoutingModule } from './post-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LoginRoutingModule,
+    PostRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
