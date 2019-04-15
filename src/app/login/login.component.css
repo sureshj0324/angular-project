@@ -1,0 +1,30 @@
+.lg-div{
+    width: 350px;
+    margin: 0px auto;
+    background-color: grey;
+    padding: 50px 20px;
+}
+.lg-div > div {
+    width: 300px;
+    margin: 10px;
+}
+
+.lg-div > div > span {
+    width: 120px;
+    float: left;
+}
+.lg-div > div > input {
+    width: 150px;
+}
+
+.lg-div > div > input[type="submit"] {
+    width: 100px;
+    margin-right: 25px;
+    float: right;
+}
+
+.lg-div > div > a{
+    float: left;
+    color: black;
+    text-decoration: underline;
+}
