@@ -17,7 +17,7 @@
     width: 150px;
 }
 
-.lg-div > div > input[type="submit"] {
+.lg-div > div > button {
     width: 100px;
     margin-right: 25px;
     float: right;

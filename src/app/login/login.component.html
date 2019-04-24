@@ -1,18 +1,27 @@
+<form #loginForm="ngForm" (ngSubmit)="getLoginData(loginForm)">
 <div class="lg-div">
   <div>
     <span> Username : </span>
-    <input type="text" name="email" >
+    <input type="text" name="email"  ngModel placeholder="Enter your email address">
   </div>
   <div>
     <span> Password : </span>
-    <input type="password" name="password" >
+    <input type="password" name="password" ngModel placeholder="Enter your secret password">
   </div>
   <div>
     <span> Remember Me : </span>
-    <input type="checkbox" name="remember_me" >
+    <input type="checkbox" name="remember_me" ngModel>
   </div>
   <div>
-    <input type="submit" >
+    <button>Submit</button>
     <a routerLink="/posts"> Go To Posts</a>
   </div>
+</div>
+</form>
+
+<div>
+  <span >My Email Address : </span>{{loginUserEmail}}
+</div>
+<div>
+  <span >My Password : </span>{{loginUserPwd}}
 </div>
